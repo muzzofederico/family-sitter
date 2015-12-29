@@ -1,0 +1,9 @@
+<NotepadPlus>
+    <Project name="family-sitter">
+        <File name="family-sitter.css" />
+        <File name="family-sitter.html" />
+        <File name="family-sitter.js" />
+        <File name="LICENSE" />
+        <File name="README.md" />
+    </Project>
+</NotepadPlus>
