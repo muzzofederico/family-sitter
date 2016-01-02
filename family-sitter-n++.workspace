@@ -5,5 +5,23 @@
         <File name="family-sitter.js" />
         <File name="LICENSE" />
         <File name="README.md" />
+        <Folder name="stylesheets">
+            <Folder name="components">
+                <File name="stylesheets\components\a_component.import.less" />
+            </Folder>
+            <Folder name="sites">
+                <File name="stylesheets\sites\home.import.less" />
+            </Folder>
+            <Folder name="vendor">
+                <File name="stylesheets\vendor\custom.bootstrap.import.less" />
+                <File name="stylesheets\vendor\custom.bootstrap.json" />
+                <File name="stylesheets\vendor\custom.bootstrap.less" />
+                <File name="stylesheets\vendor\custom.bootstrap.mixins.import.less" />
+            </Folder>
+            <File name="stylesheets\.gitignore" />
+            <File name="stylesheets\README.md" />
+            <File name="stylesheets\style.less" />
+            <File name="stylesheets\typo.import.less" />
+        </Folder>
     </Project>
 </NotepadPlus>
