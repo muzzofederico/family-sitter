@@ -10,3 +10,321 @@
 
 // Sites
 @import "sites/home.import.less";
+
+/* CSS declarations go here */
+
+/*
+
+Extra small devices (phones, less than 768px)
+No media query since this is the default in Bootstrap 
+
+Small devices (tablets, 768px and up)
+@media (min-width: @screen-sm-min) { ... }
+
+Medium devices (desktops, 992px and up)
+@media (min-width: @screen-md-min) { ... }
+
+Large devices (large desktops, 1200px and up) 
+@media (min-width: @screen-lg-min) { ... } 
+
+*/
+
+body {
+	background-color: #F2F2F2;
+	padding-top:60px;
+}
+
+.disabled {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+/* Topbar */
+.navbar {
+	background-color: #F2F2F2;
+	border-bottom: 1px solid #EDEDED;
+}
+
+.navbar * {
+	font-variant: small-caps;
+}
+
+.navbar li {
+	margin: 10px 10px 10px 0;
+}
+
+.navbar li.navbar-page {
+	/* border: 1px solid #FD9A2B; */
+}
+
+.navbar .navbar-brand {
+	background-image: url("/logo-nav.png");
+	background-size:contain;
+	background-repeat: no-repeat;
+}
+
+.navbar .navbar-brand:hover {
+	background-image: url("/logo-nav.png");
+	background-size:contain;
+	background-repeat: no-repeat;
+}
+
+.navbar li.family-sitter-home {
+	background-image: url("/logo-nav.png");
+	width: 100px;
+	background-size:contain;
+	background-repeat: no-repeat;
+	margin: 10px 10px 10px 15px;
+}
+
+.navbar li.family-sitter-home > a:hover {
+	background-image: url("/logo-nav.png");
+	background-size:contain;
+	background-repeat: no-repeat;
+}
+
+.navbar-collapse {
+	width: 100%;
+}
+
+@media screen and (min-width: @screen-sm) { 
+	.navbar-collapse {
+		width: @container-tablet;
+	}
+}
+
+@media screen and (min-width: @screen-md) { 
+	.navbar-collapse {
+		width: @container-desktop;
+	}
+}
+
+@media screen and (min-width: @screen-lg) {
+	.navbar-collapse {
+		width: @container-large-desktop;
+	}
+}
+
+/* Landing */
+
+.jumbotron {
+	position: relative;
+	color: white;
+	background: url("bg/jpg/tutti.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 400px;
+	margin:0;
+}
+.jumbotron .container {
+	color: black;
+	max-width: 600px;
+	margin-top:80px;
+	background-color: rgba(256, 256, 256, 0.4);
+	margin-bottom:15px;
+}
+.jumbotron .container > p > a {
+	font-variant: small-caps;
+	font-weight:500;
+	border:0px;
+}
+.jumbotron h1 {
+}
+
+@media screen and (min-width: @screen-sm) { 
+	.jumbotron {
+		height: 550px;
+	}
+	.jumbotron .container {
+		margin-top:160px;
+	}
+}
+
+@media screen and (min-width: @screen-md) { 
+	.jumbotron {
+		height: 600px;
+	}
+	.jumbotron .container {
+		margin-top:160px;
+	}
+}
+
+@media screen and (min-width: @screen-lg) {
+	.jumbotron {
+		height: 650px;
+	}
+	.jumbotron .container {
+		margin-top:240px;
+	}
+}
+
+/* Call to action .cta */
+
+.container-fluid.cta {
+	background-color: #FD9A2B;
+	color: white;
+	padding-bottom: 60px;
+	padding-top: 15px;
+}
+
+.box-cta h3 {
+	font-size: 1.5em;
+}
+
+.cta .logo-cta {
+	margin-top: 15px;
+	background: url("/logo-cta.png") no-repeat;
+	background-size:contain;
+	background-position: center;
+	width:100%;
+	height:135px;
+	margin-bottom: 30px;
+}
+
+/* Chi siamo .value-proposition */
+
+.container-fluid.values-proposition {
+	background-color: #FD9A2B;
+	color: white;
+	padding-bottom: 60px;
+} 
+
+.container-fluid.values-proposition .values-title {
+	margin-top: 60px;
+	margin-bottom: 15px;
+	font-size: 2.5em;
+}
+
+.box-value h3 {
+	font-size: 1.5em;
+}
+
+/* Come si usa .how-to-do */
+
+.container-fluid.how-to-do {
+	/* Nobody here! */
+	padding-bottom: 45px;
+	text-align: center;
+} 
+.container-fluid.how-to-do > * {
+	text-align: center;
+}
+
+.container-fluid.how-to-do .how-to-do-title {
+	margin-top: 60px;
+	margin-bottom: 30px;
+	font-size: 2.5em;
+} 
+
+.box-how-to-do div.step-bg.service {
+	background-image: url("steps/servizio.png");
+}
+
+.box-how-to-do div.step-bg.dates {
+	background-image: url("steps/appuntamento.png");
+}
+
+.box-how-to-do div.step-bg.choose {
+	background-image: url("steps/operatore.png");
+}
+
+.box-how-to-do div.step-bg {
+	width: 100%;
+  	padding-bottom: 60%;
+  	background-size: contain;
+  	background-repeat: no-repeat;
+	background-position: center;
+}
+
+@media (@screen-sm-min) {
+	.box-how-to-do {
+		margin-bottom: 15px;
+	}
+}
+
+
+/* Smartphone apps */
+
+.container-fluid.smartphone-app {
+	background-color: #FD9A2B;
+	color: white;
+	padding-bottom: 60px;
+} 
+
+.container-fluid.smartphone-app .app-title {
+	margin-top: 60px;
+	margin-bottom: 15px;
+	font-size: 2.5em;
+}
+
+.box-app h3 {
+	font-size: 1.5em;
+}
+
+/* Footer */
+.container-fluid.footer {
+	background-color: black;
+	color: white;
+	padding-bottom: 60px;
+	height:150px;
+} 
+
+.box-app h3 {
+	font-size: 1.5em;
+}
+
+/* Registration */
+.modal-body .col-md-12 {
+	float:none;
+}
+
+form * {
+	margin-bottom: 5px;
+}
+
+form p {
+	margin-bottom: 15px;
+}
+
+form h3 {
+	color: #E6655B;
+	margin-bottom:10px;
+	
+}
+
+form legend {
+	color: black;
+	border: 0px;
+	font-size: 1em;
+	font-weight: 700;
+}
+
+form input {
+	border: 1px solid #E6655B;
+	background:none;
+	color: #E6655B;
+	width: 100%;
+	padding:10px;
+	margin-bottom:10px;
+}
+
+form button {
+	background-color: #E6655B;
+	color: #FFF;
+	font-variant: small-caps;
+	font-weight: 400;
+	font-size: 1.1em;
+	border: 0px solid #fd8a0a;
+	width: 30%;
+	margin-left:35%;
+	padding:10px;
+	margin-bottom:15px;
+}
+
+form label {
+	font-size: 0.8em;
+}

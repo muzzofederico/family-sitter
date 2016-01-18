@@ -5,97 +5,171 @@
 	<title>Family Sitter</title>
 	
 	<link src="stylesheets/style.css" type="stylesheets/style" />
-	<link src="family-sitter.css" type="stylesheets/style" />
+	<script src="js/flowtype.js"></script>
 </head>
 
 <body>
 	{{> navigation}}
 	
 	<!-- Main jumbotron for a primary marketing message or call to action -->
-	<div class="jumbotron text-center">
+	<div name="home" class="jumbotron text-center info-content">
 		<div class="container">
-			<h1 class="display-3">Cosa possiamo fare per te?</h1>
-			<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+			<h2 class="display-3">Non hai tempo libero? <br/>Abbiamo quello che cerchi</h2>
+			<p>Baby Sitter, Pet Sitter, Plant Sitter, Colf e trasporto personale a tua disposizione, quando ti servono, vicino a te.</p>
+			<p><a class="btn btn-primary btn-md" href="#" role="button">cosa possiamo fare per te?</a></p>
 		</div>
 	</div>
-	
-	<div class="container-fluid values-proposition">
+	<div name="noi" class="container-fluid values-proposition info-content">
 		<h2 class="display-4 values-title text-center">Siamo i tuoi migliori amici.</h2>
-		<div class="row">
-			<div class="col-xs-6">
-				<div class="box-value">
-					<h3>Siamo sempre qui, per te</h3>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="box-value">
+						<h3>Siamo sempre qui, per te</h3>
+						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+					</div>
 				</div>
-			</div>
-			<div class="col-xs-6">
-				<div class="box-value">
-					<h3>Di noi ti puoi fidare</h3>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+				<div class="col-sm-6">
+					<div class="box-value">
+						<h3>Di noi ti puoi fidare</h3>
+						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+					</div>
 				</div>
-			</div>
-			<div class="col-xs-6">
-				<div class="box-value">
-					<h3>Anche quando non ci sei</h3>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-				</div>			
-			</div>
-			<div class="col-xs-6">
-				<div class="box-value">
-					<h3>Condividi e risparmia</h3>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-				</div>			
+				<div class="col-sm-6">
+					<div class="box-value">
+						<h3>Anche quando non ci sei</h3>
+						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+					</div>			
+				</div>
+				<div class="col-sm-6">
+					<div class="box-value">
+						<h3>Condividi e risparmia</h3>
+						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+					</div>			
+				</div>
 			</div>
 		</div>
 	</div> <!-- /container -->
-	<div class="container-fluid how-to-do">
-		<h2 class="display-4 how-to-do-title text-center">Chiederci aiuto è facilissimo.</h2>
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="box-how-to-do">
-					<div class="step-bg service"></div>
-					<h3>Scegli il tuo servizio</h3>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris.</p>
+	<div name="come-usarlo" class="container-fluid how-to-do info-content">
+		<div class="container">
+			<h2 class="display-4 how-to-do-title text-center">Chiederci aiuto è facilissimo.</h2>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="box-how-to-do">
+						<div class="step-bg service"></div>
+						<h3>Scegli il tuo servizio</h3>
+						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris.</p>
+					</div>
 				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="box-how-to-do">
-					<div class="step-bg dates"></div>
-					<h3>Fissa le date</h3>
-					<p>Condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.</p>
+				<div class="col-sm-4">
+					<div class="box-how-to-do">
+						<div class="step-bg dates"></div>
+						<h3>Fissa le date</h3>
+						<p>Condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.</p>
+					</div>
 				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="box-how-to-do">
-					<div class="step-bg choose"></div>
-					<h3>Scegli un amico</h3>
-					<p>Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-				</div>			
+				<div class="col-sm-4">
+					<div class="box-how-to-do">
+						<div class="step-bg choose"></div>
+						<h3>Scegli un amico</h3>
+						<p>Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+					</div>			
+				</div>
 			</div>
 		</div>
 	</div> <!-- /container -->
+	<div class="container-fluid smartphone-app info-content">
+		<h2 class="display-4 app-title text-center">E ora rilassati.</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="box-app">
+						<h3>Siamo sempre qui, per te</h3>
+						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- /container -->
+	
+	{{> areaprivata}}
+	{{> footer}}
 </body>
 
 <template name="navigation">
-	<nav class="navbar navbar-default navbar-fixed-top">
-	  <div class="container-fluid">
-		<!-- Brand and toggle get grouped for better mobile display -->
+	<nav class="navbar navbar-fixed-top">
 		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		  </button>
-		  <a class="navbar-brand" href="#">Family Sitter</a>
-		</div>
-
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		  <ul class="nav navbar-nav navbar-right">
-			<li><a href="#">Collegati</a></li>
-		  </ul>
-		</div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topbar" aria-expanded="false" aria-controls="topbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="visible-xs-inline navbar-brand text-hide" href="http://familysitter.muzzofederico.com/#home">Family Sitter</a>
+        </div>
+		<div id="topbar" class="container topbar navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="family-sitter-home hidden-xs active"><a class="text-hide" href="http://familysitter.muzzofederico.com/#home">homepage</a></li>
+				<li class="navbar-page"><a href="#noi">chi siamo</a></li>
+				<li class="navbar-page"><a href="#come-usarlo">come si usa</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a data-toggle="modal" data-target="#accessoUtenti">collegati con family sitter</a>
+				</li>
+			</ul>
+		</div><!-- /.container login-menu -->
 	</nav>
+</template>
+
+<template name="areaprivata">
+	<div class="modal fade" id="accessoUtenti" tabindex="-1" role="dialog" aria-labelledby="accessoUtenti">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="container col-md-12 access-area">
+						{{> registrazione}}
+						{{> accesso}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="registrazione">
+	<form id="registration-form" class="registration-form col-sm-6">
+		<h3>Registrati</h3>
+		<p>Se sei già registrato puoi accedere al servizio usando i tuoi dati di accesso.</p>
+		<input type="text" name="name" placeholder="Nome..." />
+		<input type="text" name="surname" placeholder="Cognome..." />
+		<!-- <legend>Indirizzo di casa</legend>
+		<input type="text" name="adress-street" placeholder="Via, corso, piazza..." />
+		<input type="text" name="adress-street-secondary" placeholder="Piano, scala, citofono..." />
+		<input type="text" name="adress-cap" placeholder="20000..." />
+		<input type="text" name="adress-city" placeholder="Milano..." /> -->
+		<input type="text" name="mail" placeholder="Indirizzo email..." />
+		<input type="text" name="phone" placeholder="Numero di cellulare..." />
+		<p>Questo contatto ci servirà per inviarti una password sicura al primo accesso.</p>
+		<!-- <label for="tos-checkbox"><span>Accetto il trattamento dei dati personali da parte di Family Sitter</span><input id="tos-checkbox" type="checkbox" name="accept-tos" /></label> -->
+		<button class="">registrami</button>
+	</form>
+</template>
+
+<template name="accesso">
+	<form id="login-form" class="login-form col-sm-6">
+		<h3>Accedi</h3>
+		<p>Se sei già registrato puoi accedere al servizio usando i tuoi dati di accesso.</p>
+		<input type="text" name="username" placeholder="Il tuo username (mail o cellulare)" />
+		<input type="password" name="password" placeholder="La tua password" />
+		<p>Se hai dimenticato la password, <b>clicca qui</b></p>
+		<button class="">accedi</button>
+	</form>
+</template>
+
+<template name="footer">
+	<div class="container-fluid footer">
+		<div class="container info-content">
+		</div>
+	</div>
 </template>
